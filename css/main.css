@@ -1,0 +1,234 @@
+:root {
+    --primary-blue: #0E52FF;
+    --primary-yellow: #fdd200;
+    --white: #ffffff;
+    --gray-bg: #f2f4f8;
+    --text-color: #1a1a1a;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #f2f4f8 60%, #e0eaff);
+    margin: 0;
+    padding: 2rem;
+    color: var(--text-color);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.7rem;
+    color: var(--primary-blue);
+    margin-bottom: 0.3rem;
+}
+
+h2 {
+    color: var(--primary-blue);
+    border-left: 5px solid var(--primary-blue);
+    padding-left: 10px;
+    margin-top: 2rem;
+}
+h2 img {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    vertical-align: middle;
+    object-fit: contain;
+    border-radius: 4px;
+}
+  
+
+.stat-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem auto 3rem;
+    max-width: 1000px;
+}
+.stat-grid .card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    border-top: 5px solid #0E52FF;
+  }
+  
+  .stat-grid .card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .stat-grid .card.customer,
+  .stat-grid .card.landing,
+  .stat-grid .card.fix-rate,
+  .stat-grid .card.whatsapp,
+  .stat-grid .card.total {
+    border-top-color: #0E52FF;
+  }
+  
+  .stat-grid .card.driver,
+  .stat-grid .card.enterprise {
+    background-color: #fdd200;
+    border-top-color: #e6b800;
+    color: #1a1a1a;
+  }
+
+  .support-summary {
+    font-size: 1.1rem;
+  }
+  
+  .support-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .support-card {
+    background: #ffffff;
+    border-left: 6px solid #0E52FF;
+    padding: 1.2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    text-align: center;
+    min-width: 180px;
+  }
+  
+  .support-card h4 {
+    margin: 0 0 0.5rem;
+    color: #0E52FF;
+  }
+  
+  .support-card span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .support-card span.small {
+    font-size: 1rem;
+  }
+  
+  .highlight-text {
+    color: #0E52FF;
+    font-weight: bold;
+  }
+  
+
+.logo{
+    display: block;
+    margin: 0 auto 1rem; 
+    max-width: 250px;
+}
+
+.card {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--primary-blue);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.card span {
+    display: block;
+    font-size: 2rem;
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+
+section {
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background: var(--white);
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+li {
+    margin: 0.6rem 0;
+    line-height: 1.6;
+}
+
+.highlight {
+    background: #f0f6ff;
+    padding: 0.9rem;
+    border-left: 5px solid var(--primary-blue);
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+#fullscreenBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+#fullscreenBtn:hover {
+    background-color: #0841cc;
+}
+.fix-rate-card {
+    background: #0E52FF;
+    color: white;
+    padding: 1.2rem 2rem;
+    border-radius: 14px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 1.5rem auto 0;
+    max-width: 300px;
+  }
+  .apps-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem;
+  }
+  
+  .app-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+  }
+  
+  .app-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .app-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #0E52FF;
+  }
+  
