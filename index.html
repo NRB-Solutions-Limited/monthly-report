@@ -344,6 +344,16 @@
         <img src="img/01_Cover.png" alt="Customer App UI Mockup"
           style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.1);">
       </div>
+      <p style="text-align: center; margin-top: 20px; font-size: 1.2rem;">
+        This report is available on this Link : <br> <a href="https://shorturl.at/ciEux" target="_blank"><strong style="font-size: 30px;">https://shorturl.at/ciEux</strong></a>.
+      </p>
+      <div id="wrapper" class="animated zoomIn">
+        <!-- We make a wrap around all of the content so that we can simply animate all of the content at the same time. I wanted a zoomIn effect and instead of placing the same class on all tags, I wrapped them into one div! -->
+        <h1 class="thankyou">
+          <!-- The <h1> tag is the reason why the text is big! -->
+          <underline>Thank you!</underline>
+          <!-- The underline makes a border on the top and on the bottom of the text -->
+        </h1>
     </section>
   </div>
   <script>
@@ -462,6 +472,22 @@
         // Remove blur effect from all cards
         document.querySelectorAll('.app-card').forEach(otherCard => {
           otherCard.classList.remove('blurred');
+        });
+      }
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get the element with the class 'thankyou'
+      const thankYouElement = document.querySelector(".thankyou");
+
+      if (thankYouElement) {
+        thankYouElement.addEventListener("mouseenter", function () {
+          // Add the animation classes when hovering over the element
+          thankYouElement.classList.add("animated", "infinite", "pulse");
+        });
+
+        thankYouElement.addEventListener("mouseleave", function () {
+          // Remove the animation classes when no longer hovering
+          thankYouElement.classList.remove("animated", "infinite", "pulse");
         });
       }
     });
