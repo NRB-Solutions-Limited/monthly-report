@@ -371,3 +371,6 @@ li {
   border-top: 5px solid rgba(26, 188, 156, 0.3);
   border-bottom: 5px solid rgba(26, 188, 156, 0.3);
 }
+.thankyou:hover {
+  cursor: none;
+}
