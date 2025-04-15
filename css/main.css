@@ -231,4 +231,6 @@ li {
     margin-bottom: 1rem;
     color: #0E52FF;
   }
-  
+  .completed-list li{
+    font-size: 20px;
+  }
