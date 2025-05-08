@@ -16,16 +16,23 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 2.7rem;
+  /* font-size: 2.7rem; */
   color: var(--primary-blue);
-  margin-bottom: 0.3rem;
+  /* margin-bottom: 0.3rem; */
+  margin: 0 !important;
+  font-weight: 700 !important;
 }
 
 h2 {
   color: var(--primary-blue);
-  border-left: 5px solid var(--primary-blue);
-  padding-left: 10px;
-  margin-top: 2rem;
+  /* border-left: 5px solid var(--primary-blue); */
+  /* padding-left: 10px; */
+  /* margin-top: 2rem; */
+  padding: 0;
+  margin: 0 !important;
+  padding-top: 5px;
+  font-weight: 700 !important;
+
 }
 
 h2 img {
@@ -41,10 +48,11 @@ h2 img {
 .stat-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem auto 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+  margin: 2rem auto 0rem;
   max-width: 1000px;
+  grid-column: 3;
 }
 
 .stat-grid .card {
@@ -321,6 +329,7 @@ li {
 .app-card.expanded li {
   font-size: 19px !important;
 }
+
 /* Add this to your existing styles */
 
 /* Animation class for pulse effect */
@@ -329,10 +338,12 @@ li {
     transform: scale(1);
     opacity: 1;
   }
+
   50% {
     transform: scale(1.1);
     opacity: 0.7;
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
@@ -343,7 +354,8 @@ li {
 .animated {
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: 1; /* Default to run the animation once */
+  animation-iteration-count: 1;
+  /* Default to run the animation once */
 }
 
 /* Pulse effect with infinite loop */
@@ -357,8 +369,9 @@ li {
   margin: 0 auto;
   margin-top: 15%;
 }
+
 .thankyou {
-  color:#0e52ff;
+  color: #0e52ff;
   text-shadow: -1px -2px 3px rgba(17, 17, 17, 0.3);
   text-align: center;
   font-family: "Monsterrat", sans-serif;
@@ -367,10 +380,54 @@ li {
   font-size: 80px;
   margin-bottom: -5px;
 }
+
 .thankyou underline {
   border-top: 5px solid rgba(26, 188, 156, 0.3);
   border-bottom: 5px solid rgba(26, 188, 156, 0.3);
 }
+
 .thankyou:hover {
   cursor: none;
+}
+
+img.iconImg {
+  width: 20px;
+}
+
+.badge-blue {
+  @apply bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-medium text-sm;
+}
+
+.badge-yellow {
+  @apply bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full font-medium text-sm;
+}
+
+.badge-green {
+  @apply bg-green-100 text-green-700 px-3 py-1 rounded-full font-medium text-sm;
+}
+
+.badge-gray {
+  @apply bg-gray-200 text-gray-600 px-3 py-1 rounded-full font-medium text-sm;
+}
+
+menu,
+ol,
+ul {
+
+  list-style: inside !important;
+}
+
+.apps-grid h2 {
+  display: flex;
+}
+
+.apps-grid ul li {
+  padding: 2px;
+  margin: 0;
+}
+.content_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
