@@ -431,3 +431,8 @@ ul {
   align-items: center;
   height: 100vh;
 }
+.thankyou_wrap {
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
