@@ -30,6 +30,7 @@
             opacity: 0;
             pointer-events: none;
             transition: opacity 4s ease;
+            overflow: auto;
             /* Increased transition duration */
         }
 
@@ -194,7 +195,7 @@
 
     <div class="section active">
         <div>
-            <img style="padding-top: 5%;" class="logo" src="img/Garibook_Logo_Black.png">
+            <img style="padding-top: 3%;" class="logo" src="img/Garibook_Logo_Black.png">
             <h1>Monthly Report</h1>
             <h2 style="text-align:center; margin-bottom: 2rem;">April 2025</h2>
             <div class="stat-grid">
@@ -435,135 +436,158 @@
                         <li>Home page layout fixes</li>
                     </ul>
                 </div>
-               
+
             </div>
         </div>
     </div>
 
     <div class="section" style="margin-top: 2rem;">
-            <div class="content_wrap">
-                <div style="text-align: center; margin-bottom: 1.5rem;">
-                    <h2 style="font-size: 1.8rem; font-weight: bold; color: #333; display: inline-block; padding: 0.5rem 1rem; border-bottom: 3px solid #ffc107;">
-                      📌 Observations
-                    </h2>
-                  </div>
-                
-                  <div class="observations-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-                    
-                    <div style="background: #fff8e1; border-left: 5px solid #ffc107; border-radius: 12px; padding: 1rem 1.25rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-                      <h3 style="margin-top: 0;">🚀 Enterprise App</h3>
-                      <p style="margin: 0;">Enterprise App is seeing the heaviest lift in business logic and trip feature development.</p>
-                    </div>
-                    
-                    <div style="background: #e3f2fd; border-left: 5px solid #2196f3; border-radius: 12px; padding: 1rem 1.25rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-                      <h3 style="margin-top: 0;">🤖 Driver App</h3>
-                      <p style="margin: 0;">Driver App is undergoing a significant UX overhaul, along with experimental AI integration.
-                    </p>
-                    </div>
-                    
-                    <div style="background: #f1f8e9; border-left: 5px solid #8bc34a; border-radius: 12px; padding: 1rem 1.25rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-                      <h3 style="margin-top: 0;">🔄 Cross-Platform</h3>
-                      <p style="margin: 0;">Multiple platforms are being worked on concurrently, often on the same task from different angles (e.g., Intercity trips on Admin, Customer, and Enterprise).</p>
-                    </div>
-                    
-                    <div style="background: #fce4ec; border-left: 5px solid #e91e63; border-radius: 12px; padding: 1rem 1.25rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-                      <h3 style="margin-top: 0;">⚙️ Admin & Web</h3>
-                      <p style="margin: 0;">Good distribution of frontend vs backend tasks, particularly across Admin Panel and Landing Website.</p>
-                    </div>
-                
-                  </div>
+        <div class="content_wrap">
+            <div style="text-align: center; margin-bottom: 1.5rem;">
+                <h2
+                    style="font-size: 1.8rem; font-weight: bold; color: #333; display: inline-block; padding: 0.5rem 1rem; border-bottom: 3px solid #ffc107;">
+                    📌 Observations
+                </h2>
             </div>
-      </div>
-      
-      <div class="section">
-            <div class="content_wrap">
-                <div style="max-width: 1000px; width: 100%; padding: 1rem; background: #f9f9f9; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-          
-                    <!-- Title -->
-                    <div style="text-align: center; margin-bottom: 1.5rem;">
-                      <h2 style="font-size: 1.8rem; font-weight: bold; color: #333; border-bottom: 3px solid #2196f3; display: inline-block; padding-bottom: 0.5rem;">
+
+            <div class="observations-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+
+                <div
+                    style="background: #fff8e1; border-left: 5px solid #ffc107; border-radius: 12px; padding: 1rem 1.25rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                    <h3 style="margin-top: 0;">🚀 Enterprise App</h3>
+                    <p style="margin: 0;">Enterprise App is seeing the heaviest lift in business logic and trip feature
+                        development.</p>
+                </div>
+
+                <div
+                    style="background: #e3f2fd; border-left: 5px solid #2196f3; border-radius: 12px; padding: 1rem 1.25rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                    <h3 style="margin-top: 0;">🤖 Driver App</h3>
+                    <p style="margin: 0;">Driver App is undergoing a significant UX overhaul, along with experimental AI
+                        integration.
+                    </p>
+                </div>
+
+                <div
+                    style="background: #f1f8e9; border-left: 5px solid #8bc34a; border-radius: 12px; padding: 1rem 1.25rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                    <h3 style="margin-top: 0;">🔄 Cross-Platform</h3>
+                    <p style="margin: 0;">Multiple platforms are being worked on concurrently, often on the same task
+                        from different angles (e.g., Intercity trips on Admin, Customer, and Enterprise).</p>
+                </div>
+
+                <div
+                    style="background: #fce4ec; border-left: 5px solid #e91e63; border-radius: 12px; padding: 1rem 1.25rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                    <h3 style="margin-top: 0;">⚙️ Admin & Web</h3>
+                    <p style="margin: 0;">Good distribution of frontend vs backend tasks, particularly across Admin
+                        Panel and Landing Website.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content_wrap">
+            <div
+                style="max-width: 1000px; width: 100%; padding: 1rem; background: #f9f9f9; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+
+                <!-- Title -->
+                <div style="text-align: center; margin-bottom: 1.5rem;">
+                    <h2
+                        style="font-size: 1.8rem; font-weight: bold; color: #333; border-bottom: 3px solid #2196f3; display: inline-block; padding-bottom: 0.5rem;">
                         🧾 April Issue Report & Handling Summary
-                      </h2>
-                    </div>
-                
-                    <!-- Summary -->
-                    <div style="display: flex; justify-content: space-around; text-align: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
-                      <div style="background: #e3f2fd; padding: 1rem 1.5rem; border-radius: 10px; min-width: 150px;">
+                    </h2>
+                </div>
+
+                <!-- Summary -->
+                <div
+                    style="display: flex; justify-content: space-around; text-align: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+                    <div style="background: #e3f2fd; padding: 1rem 1.5rem; border-radius: 10px; min-width: 150px;">
                         <h3 style="margin: 0; font-size: 1.2rem;">Total Issues</h3>
                         <p style="font-size: 1.5rem; font-weight: bold; margin: 0;">34</p>
-                      </div>
-                      <div style="background: #e8f5e9; padding: 1rem 1.5rem; border-radius: 10px; min-width: 150px;">
+                    </div>
+                    <div style="background: #e8f5e9; padding: 1rem 1.5rem; border-radius: 10px; min-width: 150px;">
                         <h3 style="margin: 0; font-size: 1.2rem;">Handled</h3>
                         <p style="font-size: 1.5rem; font-weight: bold; margin: 0;">28</p>
-                      </div>
-                      <div style="background: #fff3e0; padding: 1rem 1.5rem; border-radius: 10px; min-width: 150px;">
+                    </div>
+                    <div style="background: #fff3e0; padding: 1rem 1.5rem; border-radius: 10px; min-width: 150px;">
                         <h3 style="margin: 0; font-size: 1.2rem;">Success Rate</h3>
                         <p style="font-size: 1.5rem; font-weight: bold; margin: 0;">82.35%</p>
-                      </div>
                     </div>
-                
-                    <!-- Key Issues -->
-                    <div>
-                      <h3 style="margin-bottom: 1rem; color: #444;">🔍 Key Issues Identified</h3>
-                      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-                        
-                        <div style="background: #fff; padding: 1rem; border-left: 5px solid #f44336; border-radius: 8px;">
-                          <h4 style="margin: 0;">Payment processing errors (7)</h4>
-                          <p style="margin: 0.5rem 0 0;">Multiple users faced failed transactions or incorrect billing.</p>
+                </div>
+
+                <!-- Key Issues -->
+                <div>
+                    <h3 style="margin-bottom: 1rem; color: #444;">🔍 Key Issues Identified</h3>
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+
+                        <div
+                            style="background: #fff; padding: 1rem; border-left: 5px solid #f44336; border-radius: 8px;">
+                            <h4 style="margin: 0;">Payment processing errors (7)</h4>
+                            <p style="margin: 0.5rem 0 0;">Multiple users faced failed transactions or incorrect
+                                billing.</p>
                         </div>
-                        
-                        <div style="background: #fff; padding: 1rem; border-left: 5px solid #ff9800; border-radius: 8px;">
-                          <h4 style="margin: 0;">App crash / login issues (6)</h4>
-                          <p style="margin: 0.5rem 0 0;">Crashes on app open, slow logins on Android & iOS.</p>
+
+                        <div
+                            style="background: #fff; padding: 1rem; border-left: 5px solid #ff9800; border-radius: 8px;">
+                            <h4 style="margin: 0;">App crash / login issues (6)</h4>
+                            <p style="margin: 0.5rem 0 0;">Crashes on app open, slow logins on Android & iOS.</p>
                         </div>
-                        
-                        <div style="background: #fff; padding: 1rem; border-left: 5px solid #9c27b0; border-radius: 8px;">
-                          <h4 style="margin: 0;">Feature malfunctions (5)</h4>
-                          <p style="margin: 0.5rem 0 0;">Issues with search filters, messaging, or broken UI.</p>
+
+                        <div
+                            style="background: #fff; padding: 1rem; border-left: 5px solid #9c27b0; border-radius: 8px;">
+                            <h4 style="margin: 0;">Feature malfunctions (5)</h4>
+                            <p style="margin: 0.5rem 0 0;">Issues with search filters, messaging, or broken UI.</p>
                         </div>
-                
-                        <div style="background: #fff; padding: 1rem; border-left: 5px solid #03a9f4; border-radius: 8px;">
-                          <h4 style="margin: 0;">Data sync issues (4)</h4>
-                          <p style="margin: 0.5rem 0 0;">Delays in syncing user data or missing information.</p>
+
+                        <div
+                            style="background: #fff; padding: 1rem; border-left: 5px solid #03a9f4; border-radius: 8px;">
+                            <h4 style="margin: 0;">Data sync issues (4)</h4>
+                            <p style="margin: 0.5rem 0 0;">Delays in syncing user data or missing information.</p>
                         </div>
-                
-                        <div style="background: #fff; padding: 1rem; border-left: 5px solid #673ab7; border-radius: 8px;">
-                          <h4 style="margin: 0;">Bug regression (3)</h4>
-                          <p style="margin: 0.5rem 0 0;">Issues previously resolved but reopened in April.</p>
+
+                        <div
+                            style="background: #fff; padding: 1rem; border-left: 5px solid #673ab7; border-radius: 8px;">
+                            <h4 style="margin: 0;">Bug regression (3)</h4>
+                            <p style="margin: 0.5rem 0 0;">Issues previously resolved but reopened in April.</p>
                         </div>
-                
-                        <div style="background: #fff; padding: 1rem; border-left: 5px solid #607d8b; border-radius: 8px;">
-                          <h4 style="margin: 0;">User account anomalies (3)</h4>
-                          <p style="margin: 0.5rem 0 0;">Duplicate accounts or permission issues.</p>
+
+                        <div
+                            style="background: #fff; padding: 1rem; border-left: 5px solid #607d8b; border-radius: 8px;">
+                            <h4 style="margin: 0;">User account anomalies (3)</h4>
+                            <p style="margin: 0.5rem 0 0;">Duplicate accounts or permission issues.</p>
                         </div>
-                
-                        <div style="background: #fff; padding: 1rem; border-left: 5px solid #795548; border-radius: 8px;">
-                          <h4 style="margin: 0;">Backend/API downtime (2)</h4>
-                          <p style="margin: 0.5rem 0 0;">Outages or timeouts with internal APIs.</p>
+
+                        <div
+                            style="background: #fff; padding: 1rem; border-left: 5px solid #795548; border-radius: 8px;">
+                            <h4 style="margin: 0;">Backend/API downtime (2)</h4>
+                            <p style="margin: 0.5rem 0 0;">Outages or timeouts with internal APIs.</p>
                         </div>
-                
-                        <div style="background: #fff; padding: 1rem; border-left: 5px solid #9e9e9e; border-radius: 8px;">
-                          <h4 style="margin: 0;">Miscellaneous (4)</h4>
-                          <p style="margin: 0.5rem 0 0;">Unclear reports or third-party service issues.</p>
+
+                        <div
+                            style="background: #fff; padding: 1rem; border-left: 5px solid #9e9e9e; border-radius: 8px;">
+                            <h4 style="margin: 0;">Miscellaneous (4)</h4>
+                            <p style="margin: 0.5rem 0 0;">Unclear reports or third-party service issues.</p>
                         </div>
-                
-                      </div>
+
                     </div>
-                
-                    <!-- Team Coordination Notes -->
-                    <div style="margin-top: 2rem;">
-                      <h3 style="color: #444;">🤝 Team Coordination Notes</h3>
-                      <ul style="padding-left: 1.2rem; color: #555; margin-top: 0.5rem;">
+                </div>
+
+                <!-- Team Coordination Notes -->
+                <div style="margin-top: 2rem;">
+                    <h3 style="color: #444;">🤝 Team Coordination Notes</h3>
+                    <ul style="padding-left: 1.2rem; color: #555; margin-top: 0.5rem;">
                         <li>The CS team followed up on nearly all issues within 24 hours.</li>
                         <li>The tech team resolved most app-related bugs within 1–3 hours.</li>
                         <li>Some recurring reports suggest communication gaps between teams.</li>
-                      </ul>
-                    </div>
-                
-                  </div>
+                    </ul>
+                </div>
+
             </div>
-      </div>
-      
+        </div>
+    </div>
+
     <script>
         const sections = document.querySelectorAll('.section');
         let current = 0;
@@ -593,25 +617,49 @@
         }
 
         let scrollTimeout = null;
-        const scrollDelay = 500; // Adjust this to control the delay between scroll actions (in milliseconds)
+        const scrollDelay = 500; // Delay between scroll actions
+
+        let readyToScrollNext = false;
 
         window.addEventListener('wheel', (e) => {
-            e.preventDefault(); // Prevent default scroll behavior
+            e.preventDefault();
 
-            // Clear the previous timeout if it's still pending
-            if (scrollTimeout) {
-                clearTimeout(scrollTimeout);
+            const sections = document.querySelectorAll('.section');
+            const section = sections[current];
+            const isScrollable = section.scrollHeight > section.clientHeight;
+            const atTop = section.scrollTop === 0;
+            const atBottom = section.scrollTop + section.clientHeight >= section.scrollHeight - 1;
+
+            if (isScrollable) {
+                section.scrollTop += e.deltaY;
+
+                // Reached bottom or top, prepare for next scroll
+                if ((e.deltaY > 0 && atBottom) || (e.deltaY < 0 && atTop)) {
+                    if (readyToScrollNext) {
+                        triggerSectionChange(e.deltaY);
+                        readyToScrollNext = false; // reset
+                    } else {
+                        readyToScrollNext = true;
+                    }
+                } else {
+                    readyToScrollNext = false;
+                }
+            } else {
+                triggerSectionChange(e.deltaY);
             }
+        });
 
-            // Handle scrolling up or down with a delay
+        function triggerSectionChange(deltaY) {
+            if (scrollTimeout) clearTimeout(scrollTimeout);
             scrollTimeout = setTimeout(() => {
-                if (e.deltaY > 0) {
+                if (deltaY > 0) {
                     showSection(current + 1);
                 } else {
                     showSection(current - 1);
                 }
-            }, scrollDelay); // Delay of 2 seconds (2000 ms)
-        });
+            }, scrollDelay);
+        }
+
 
         // Prevent scroll bounce on mobile
         window.addEventListener('touchstart', handleTouchStart, false);
