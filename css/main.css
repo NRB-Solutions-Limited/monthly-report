@@ -431,6 +431,9 @@ ul {
     list-style-type: circle !important;
 }
 
+.strong {
+    font-weight: 700;
+}
 .content_wrap {
   display: flex;
   justify-content: center;
