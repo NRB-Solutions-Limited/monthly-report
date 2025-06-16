@@ -424,7 +424,13 @@ ul {
 .apps-grid ul li {
   padding: 2px;
   margin: 0;
+  font-size: 15px;
 }
+.app-card ul ul {
+    margin-left: 20px;
+    list-style-type: circle !important;
+}
+
 .content_wrap {
   display: flex;
   justify-content: center;
